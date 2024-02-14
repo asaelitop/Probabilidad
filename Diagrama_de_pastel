@@ -1,0 +1,15 @@
+datos = [2, 3, 4, 5, 8, 8]
+separaciones = [0, 0, 0, 0, 0, 0]
+
+plt.pie(datos,
+        explode = separaciones, 
+        colors = ["#8F6C9A", "#412060", "#BC9ADC", "#280CB2", "#8A75F5", "#241A58"],
+        pctdistance = .8,
+        counterclock = False,
+        startangle = 90,
+        autopct = "%0.1F%%",
+        labels = ["NECAXA", "SANTOS", "TOLUCA", "CHIVAS", "AMERICA", "PUMAS"],
+        
+       )
+
+plt.show()
