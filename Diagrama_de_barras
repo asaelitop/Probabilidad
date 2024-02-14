@@ -1,0 +1,20 @@
+plt.figure(figsize = (12, 6)) # Ancho, alto del grafico
+
+marcas_clases = [0, 2, 4, 6, 8, 10] # Datos del eje "x"
+frecuencias = [2, 3, 4, 5, 8, 8] # Datos del eje "y"
+marcas_texto = ["NECAXA", "SANTOS", "TOLUCA", "CHIVAS", "AMERICA", "PUMAS"]
+
+# Histograma:
+# - Barras al 100% (width = 1)
+# - Color de contorno negro (edgecolor= "k")
+# - Seleccionar color hexadecimal: https://htmlcolorcodes.com/es/
+plt.bar(marcas_clases, frecuencias,
+        width = 1, edgecolor= "k", 
+        color = ["#8F6C9A", "#412060", "#BC9ADC", "#280CB2", "#8A75F5", "#241A58"]) 
+
+plt.xticks(marcas_clases, marcas_texto, fontsize = 25, rotation = 45)
+plt.xlabel("Marcas de clase", fontsize = 25) # Etiqueta del eje x
+plt.ylabel("Frecuencia absoluta", fontsize = 25) # Etiqueta del eje y
+plt.title("Histograma", fontsize = 40) # Titulo
+plt.grid() # Activar cuadricula
+plt.show() # Mostrar grafico
